@@ -1,0 +1,131 @@
+section{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width:50%;
+    flex-grow: 1;
+}
+section h1{
+    width:100%;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    border-radius:5px;
+    margin:10px
+}
+form{
+    align-items: center;
+    flex-direction: column;
+    margin-top:10px;
+    width: 90%;
+    background-color: rgba(255,255,255,0.95);
+    display: flex;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+.form_elem{
+    width: 90%;
+    margin-bottom:10px;
+    font-size:20px;
+    display:flex;
+    flex-direction: column;
+    align-items:center
+}
+
+.input{
+    height:30px;
+    width: 100%;
+    font-size: 17px;
+    border:solid 1px gray;
+
+
+}
+#login_button{
+    font-size:20px;
+    width: 90%;
+    font-weight: bold;
+    color:white;
+    background-color: #784941;
+    border-radius: 20px;
+    margin-bottom:5px;
+    border:none;
+    cursor:pointer;
+    height:40px;
+    font-family: var(--font)
+}
+#login_button:hover{
+    background-color: #e97f6d;
+}
+#sign_up{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(90% - 10px);
+    background-color: rgba(255,255,255,0.85);
+    border-radius: 5px;
+    padding:5px
+}
+#sign_up a{
+    margin-top:10px;
+    text-decoration:none;
+    border:solid #784941 3px;
+    width:70%;
+    border-radius:20px;
+    text-align:center;
+    color:black;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+#sign_up a:hover{
+    color:white;
+    background-color: #784941;
+
+}
+form span{
+    opacity:0;
+    font-size:17px;
+    color:red
+}
+
+form img{
+    opacity:0;
+    width:14px;
+    height:14px;
+    margin-right:3px;
+    transition: opacity 0.3s;
+}
+.form_elem div{
+    display: flex;
+    height:20px;
+    width:100%;
+    align-items:center
+}
+.error img, .error span{
+    opacity:1;
+    
+}
+.error input{
+    border-color:red
+}
+.error label{
+    color:red
+}
+@media(max-width:650px){
+    section{
+        width:90%
+    }
+    section h1{
+        font-size: 25px;
+    }
+    .form_elem, #login_button{
+        font-size:17px
+    }
+    .input, div span{
+        font-size:14px
+    }
+    #sign_up a{
+        font-size:15px
+    }
+}

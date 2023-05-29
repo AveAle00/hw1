@@ -1,0 +1,37 @@
+body{
+    align-items: start;
+}
+
+#overlay{
+    background-color: rgba(0,0,0,0.3);
+    position: absolute;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+}
+
+#slogan, #title{
+    color:white;
+}
+#title{
+    font-size:50px
+}
+#slogan{
+    font-size:30px
+}
+section{
+    flex-direction: column;
+    display: flex;
+    justify-content: end;
+    align-items:start;
+    width:50%;
+    margin-left: 5%;
+}
+@media(max-width:600px){
+    #title{
+        font-size: 35px
+    }
+    #slogan{
+        font-size:20px
+    }
+}

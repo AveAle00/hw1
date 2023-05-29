@@ -1,0 +1,137 @@
+section{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width:50%;
+    flex-grow: 1;
+    
+}
+section h1{
+    width:100%;
+    font-size: 25px;
+    text-align: center;
+    border-radius:5px;
+    color:white
+}
+form{
+    align-items: center;
+    flex-direction: column;
+    margin-top:10px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.95);
+    display: flex;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+.form_elem{
+    width: 90%;
+    margin-bottom:10px;
+    font-size:20px;
+    display:flex;
+    flex-direction: column;
+    align-items:center
+}
+
+.input{
+    height:30px;
+    width: 100%;
+    font-size: 17px;
+    border:solid 1px gray;
+
+
+}
+#sign_in_button{
+    font-size:20px;
+    width: 90%;
+    height:30px;
+    font-family: var(--font);
+    font-weight: bold;
+    color:white;
+    background-color: #784941;
+    border-radius: 20px;
+    margin-bottom:5px;
+    border:none;
+    cursor:pointer;
+    height:40px
+}
+
+[data-elem="photo"] input{
+   display:none
+}
+[data-elem="photo"] 
+[data-elem="chooseButton"]{
+    color:white;
+    background-color: #784941;
+    border:none;
+    height: 30px;
+    font-family: var(--font);
+    font-weight: bold;
+    border-radius:15px;
+    cursor:pointer;
+    margin-right:5px
+}
+[data-elem="chooseButton"]:hover, #sign_in_button:hover{
+    background-color: #e97f6d;
+}
+#chooseContainer{
+    display: flex;
+    justify-content: center;
+    height: 90px;
+    flex-direction: column;        
+
+}
+#file_name, [data-elem="chooseButton"]{
+    font-size:17px;
+}
+
+form span{
+    opacity:0;
+    font-size:17px;
+    color:red
+}
+
+form img{
+    opacity:0;
+    width:14px;
+    height:14px;
+    margin-right:3px;
+    transition: opacity 0.3s;
+}
+.form_elem div{
+    display: flex;
+    height:20px;
+    width:100%;
+    align-items:center
+}
+.error img, .error span{
+    opacity:1;
+    
+}
+.error input{
+    border-color:red
+}
+.error label{
+    color:red
+}
+@media(max-width:650px){
+    section{
+        width:90%
+    }
+    section h1{
+        font-size: 25px;
+    }
+    .form_elem, #sign_in_button, [data-elem='chooseButton']{
+        font-size:16px
+    }
+    .input, div span{
+        font-size:14px
+    }
+    #sign_up a, #chooseContainer em{
+        font-size:15px
+    }
+    #chooseContainer{
+        max-height: 70px;
+    }
+}
